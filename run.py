@@ -165,7 +165,7 @@ display_facial_landmarks(img, landmarks, fig_size=[5, 5])
 
 for landmark in landmarks:
     face = align_and_crop_face(img, landmark, expand=1.3)
-    img.save(format = "PNG")
+    img.save('~/test.png' format = "PNG")
     #display(face2paint(model=model, img=face, size=512))
 
 print('done')
