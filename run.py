@@ -166,6 +166,6 @@ display_facial_landmarks(img, landmarks, fig_size=[5, 5])
 for landmark in landmarks:
     face = align_and_crop_face(img, landmark, expand=1.3)
     output = face2paint(model=model, img=face, size=512, side_by_side=False)
-	output.save('/home/azureuser/watashi/animegan2-pytorch/output.jpg')
+    output.save('/home/azureuser/watashi/animegan2-pytorch/output.jpg')
 
 print('done')
